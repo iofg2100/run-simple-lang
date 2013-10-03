@@ -1,0 +1,3 @@
+[submodule "simple-lang"]
+	path = simple-lang
+	url = https://github.com/iofg2100/simple-lang.git
