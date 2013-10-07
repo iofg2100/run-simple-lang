@@ -1,12 +1,18 @@
 !!! 5
 %html
   %head
-    %meta{ charset: 'utf-8' }
-    %link{ rel: 'stylesheet', href: '//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css' }
-    / %link{ rel: 'stylesheet' href: './style.css' }
+    %meta{charset: 'utf-8'}
+    %link{rel: 'stylesheet', href: '//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css'}
+    %link{rel: 'stylesheet', href: '/css/style.css'}
+    %link{rel: 'stylesheet', href: '/css/codemirror.css'}
+    %script{src: '/js/codemirror.js'}
+    %script{src: 'http://code.jquery.com/jquery-1.10.1.min.js'}
     %title Run simple-lang
   %body
     .container
       .page-header
         %h1 Title
-
+      %p#code_field
+      %p
+        %button.btn{type: 'button'} Run
+  %script{src: 'js/app.js'}
