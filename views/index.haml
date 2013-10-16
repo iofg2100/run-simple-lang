@@ -14,5 +14,9 @@
         %h1 Title
       %p#code_field
       %p
-        %button.btn{type: 'button'} Run
-  %script{src: 'js/app.js'}
+        %button.btn#run_button{type: 'button'} Run
+  :coffee
+    editor = CodeMirror($("#code_field")[0], #{@editor_config})
+    $("#run_button").click ->
+      $.post("run")
+
