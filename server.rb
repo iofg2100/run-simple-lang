@@ -1,9 +1,7 @@
-
-
 require 'sinatra'
 require 'less'
 require 'coffee-script'
-require 'erb'
+require 'haml'
 require 'json'
 require 'pathname'
 require 'stringio'
